@@ -117,6 +117,15 @@ func (h *userHandler) CheckEmailAvailability(c *gin.Context) {
 
 }
 
+func (h *userHandler) UploadAvatar(c *gin.Context) {
+	// input dari user
+	// simpan gambarnya di folder "images/"
+	// di service kita panggil repo
+	// JWR (sementara hardcode, seakan-akan user yg login ID = 1)
+	// repo ambil data user yg ID = 1
+	// repo update data user simpan lokasi file
+}
+
 func (h *userHandler) FetchUser(c *gin.Context) {
 
 	currentUser := c.MustGet("currentUser").(user.User)
