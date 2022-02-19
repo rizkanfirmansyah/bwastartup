@@ -79,6 +79,14 @@ func (h *userHandler) Login(c *gin.Context) {
 
 }
 
+func CheckEmailAvailability(c *gin.Context) {
+	// ada input email from user
+	// input email di-mapping ke struct input
+	// struct input di-passing ke service
+	// service akan manggil repository - email sudah ada atau belum
+	// repository - db
+}
+
 func (h *userHandler) FetchUser(c *gin.Context) {
 
 	currentUser := c.MustGet("currentUser").(user.User)
