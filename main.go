@@ -88,10 +88,3 @@ func authMiddleware(authService auth.Service, userService user.Service) gin.Hand
 	}
 
 }
-
-// ambil nilai header Authorization : Bearer tokentoken
-// dari header Authorization, kita ambil nilai tokennya saja
-// validasi token
-// ambil user_id
-// ambil user dari db berdasarkan user_id lewat service
-// set context isinya user
