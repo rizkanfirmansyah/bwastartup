@@ -37,10 +37,6 @@ func (h *campaignHandler) GetCampaigns(c *gin.Context) {
 }
 
 func (h *campaignHandler) GetCampaign(c *gin.Context) {
-	// handler : mapping id yg di url ke struct input =>service, call formatter
-	// service : inputnya struct input => data id dari url, manggil repo
-	// repository : get campaign by Id
-
 	var input campaign.GetCampaignDetailInput
 
 	err := c.ShouldBindUri(&input)
